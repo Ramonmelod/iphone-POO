@@ -1,6 +1,6 @@
 public class Iphone implements ReprodutorMusical, AparelhoTelefonico, NavegadorInternet {
     private String musica = null;
-    private String URL = null;
+    private String url = null;
 
     public void selecionarMusica(String musica) {
         this.musica = musica;
@@ -36,17 +36,17 @@ public class Iphone implements ReprodutorMusical, AparelhoTelefonico, NavegadorI
         System.out.println("Ouvindo correio de voz");
     };
 
-    public void exibirPagina(String URL) {
-        this.URL = URL;
+    public void exibirPagina(String url) {
+        this.url = url;
 
-        System.out.println("Abrindo a página: " + URL);
+        System.out.println("Abrindo a página: " + url);
 
     };
 
     public void atualizarPagina() {
 
-        if (URL != null) {
-            System.out.println("Atualizando a página: " + URL);
+        if (url != null) {
+            System.out.println("Atualizando a página: " + url);
         } else {
             System.out.println("Ação não permitida - Sem página para atualizar");
         }
