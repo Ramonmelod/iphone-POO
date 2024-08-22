@@ -4,8 +4,16 @@ public class App {
         Iphone iphone = new Iphone();
         iphone.atender();
         iphone.ligar("99 88554477");
+        iphone.tocar();
         iphone.selecionarMusica("A ele a glória");
+        iphone.tocar();
+        iphone.atualizarPagina();
         iphone.exibirPagina("www.ramonmelo.com.br");
+        iphone.atualizarPagina();
+        iphone.iniciarCorreioVoz();
+        iphone.adicionarNovaAba();
+        iphone.pausar();
+        iphone.tocar();
 
     }
 }

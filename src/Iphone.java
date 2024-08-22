@@ -1,11 +1,19 @@
 public class Iphone implements ReprodutorMusical, AparelhoTelefonico, NavegadorInternet {
-
-    public void tocar() {
-        System.out.println("Reproduzindo Musica");
-    };
+    private String musica = null;
+    private String URL = null;
 
     public void selecionarMusica(String musica) {
+        this.musica = musica;
         System.out.println("Música: " + musica + " selecionada");
+    };
+
+    public void tocar() {
+        if (musica != null) {
+            System.out.println("Reproduzindo: " + musica);
+        } else {
+            System.out.println("Nenhuma musica selecionada! Por favor selecione uma musica");
+        }
+
     };
 
     public void pausar() {
@@ -25,15 +33,23 @@ public class Iphone implements ReprodutorMusical, AparelhoTelefonico, NavegadorI
     };
 
     public void exibirPagina(String URL) {
+        this.URL = URL;
+
         System.out.println("Abrindo a página: " + URL);
+
     };
 
     public void atualizarPagina() {
-        System.out.println("Atualizando");
+
+        if (URL != null) {
+            System.out.println("Atualizando a página: " + URL);
+        } else {
+            System.out.println("Ação não permitida - Sem página para atualizar");
+        }
     };
 
     public void adicionarNovaAba() {
-        System.out.println("");
+        System.out.println("Nova Aba adicionada");
     };
 
 }
