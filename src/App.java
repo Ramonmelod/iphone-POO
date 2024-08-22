@@ -5,8 +5,10 @@ public class App {
         iphone.atender();
         iphone.ligar("99 88554477");
         iphone.tocar();
+        iphone.pausar();
         iphone.selecionarMusica("A ele a glória");
         iphone.tocar();
+        iphone.pausar();
         iphone.atualizarPagina();
         iphone.exibirPagina("www.ramonmelo.com.br");
         iphone.atualizarPagina();

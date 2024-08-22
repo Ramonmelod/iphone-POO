@@ -17,7 +17,11 @@ public class Iphone implements ReprodutorMusical, AparelhoTelefonico, NavegadorI
     };
 
     public void pausar() {
-        System.out.println("Pause");
+        if (musica != null) {
+            System.out.println("Pausando: " + musica);
+        } else {
+            System.out.println("Nenhuma musica tocando para ser pausada!");
+        }
     };
 
     public void ligar(String numero) {
